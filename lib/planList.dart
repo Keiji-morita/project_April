@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:aprilprojectapp/planContents.dart';
 
 class planList extends StatefulWidget {
   @override
@@ -10,9 +11,26 @@ class _planListState extends State<planList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
       ),
-      body: PageView(),
+      body: SizedBox(
+        height: 170,
+        width: 180,
+      child: InkWell(
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.cyan
+          )
+        
+          ),
+      onTap: (){
+        Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => planContents(),
+              )
+        );
+      },
+      )
+      )
     );
   }
 }
