@@ -13,23 +13,21 @@ class _planListState extends State<planList> {
       appBar: AppBar(
       ),
       body: SizedBox(
-        height: 170,
-        width: 180,
-      child: InkWell(
-        child: Container(
-          decoration: BoxDecoration(
-            color: Colors.cyan
-          )
+    height: 100,
+    width: 500,
+      child: Card(
         
-          ),
-      onTap: (){
-        Navigator.push(
+      child: InkWell(  // InkWellはCardの子ウィジェット
+    onTap: () {
+              Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => planContents(),
               )
         );
-      },
-      )
+    },
+    child: Text("大阪"),
+  ),
+),
       )
     );
   }
