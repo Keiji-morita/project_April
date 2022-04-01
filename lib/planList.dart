@@ -13,11 +13,11 @@ class _planListState extends State<planList> {
       appBar: AppBar(
       ),
       body: Card(
-  child: InkWell(  // InkWellはCardの子ウィジェット
-    onTap: () {},
-    child: Container(
-      height: 300.0,
-    ),
+      child: InkWell(  // InkWellはCardの子ウィジェット
+    onTap: () {
+      
+    },
+    child: Text("大阪"),
   ),
 ),
     );
