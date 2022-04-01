@@ -12,25 +12,14 @@ class _planListState extends State<planList> {
     return Scaffold(
       appBar: AppBar(
       ),
-      body: SizedBox(
-        height: 170,
-        width: 180,
-      child: InkWell(
-        child: Container(
-          decoration: BoxDecoration(
-            color: Colors.cyan
-          )
-        
-          ),
-      onTap: (){
-        Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => planContents(),
-              )
-        );
-      },
-      )
-      )
+      body: Card(
+  child: InkWell(  // InkWellはCardの子ウィジェット
+    onTap: () {},
+    child: Container(
+      height: 300.0,
+    ),
+  ),
+),
     );
   }
 }
