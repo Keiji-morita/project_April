@@ -12,14 +12,23 @@ class _planListState extends State<planList> {
     return Scaffold(
       appBar: AppBar(
       ),
-      body: Card(
+      body: SizedBox(
+    height: 100,
+    width: 500,
+      child: Card(
+        
       child: InkWell(  // InkWellはCardの子ウィジェット
     onTap: () {
-      
+              Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => planContents(),
+              )
+        );
     },
     child: Text("大阪"),
   ),
 ),
+      )
     );
   }
 }
