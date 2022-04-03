@@ -16,8 +16,7 @@ class _planListState extends State<planList> {
     height: 100,
     width: 500,
       child: Card(
-        
-      child: InkWell(  // InkWellはCardの子ウィジェット
+        child: InkWell(  // InkWellはCardの子ウィジェット
     onTap: () {
               Navigator.push(
               context,
@@ -25,7 +24,7 @@ class _planListState extends State<planList> {
               )
         );
     },
-    child: Text("大阪"),
+    child: Text("奈良"),
   ),
 ),
       )
