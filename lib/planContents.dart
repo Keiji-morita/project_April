@@ -1,3 +1,4 @@
+import 'package:aprilprojectapp/serch.dart';
 import 'package:flutter/material.dart';
 
 class planContents extends StatefulWidget {
@@ -43,6 +44,23 @@ class _planContentsState extends State<planContents> {
               ],
           ),
           ),
+
+          SizedBox(
+            child: ElevatedButton(
+  child: const Text('Button'),
+  style: ElevatedButton.styleFrom(
+    primary: Colors.orange,
+    onPrimary: Colors.white,
+  ),
+  onPressed: () {
+                  Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => serch(),
+              )
+        );
+  },
+),
+          )
         ],
         ),
       );
