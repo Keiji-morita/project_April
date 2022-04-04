@@ -38,6 +38,7 @@ dependencies:
   geolocator:
   http:
   google_maps_flutter: 
+  flutter_google_places:
 
 dev_dependencies:
   flutter_test:
